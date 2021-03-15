@@ -69,3 +69,11 @@ code {
   font-weight: bold;
 }
 
+
+/* Signin screen*/
+
+.w-100{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}

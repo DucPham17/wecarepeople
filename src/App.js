@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import HomeScreen from './Screen/HomeScreen'
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import SigninScreen from './Screen/SigninScreen';
+import SignupScreen from './Screen/SignupScreen';
+import PostScreen from './Screen/PostScreen';
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
           <div className="content">
             <Route path="/" exact={true} component={HomeScreen} />
             <Route path="/signin" exact={true} component={SigninScreen} />
-            
+            <Route path="/signup" exact={true} component={SignupScreen} />
+            <Route path="/posts" exact={true} component={PostScreen} />
           </div>
         </main>
         <footer className="grid-container--footer">
