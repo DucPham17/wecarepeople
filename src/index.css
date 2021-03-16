@@ -13,6 +13,10 @@ code {
 }
 
 /* header and footer*/
+.signin-title{
+  text-decoration-color: white;
+}
+
 .grid-container{
   display: grid;
   grid-template-areas: 
