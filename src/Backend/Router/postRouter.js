@@ -3,13 +3,23 @@ const router = express.Router();
 const app = require("../firebase");
 const firebase = require("firebase/app");
 require("firebase/auth");
-// firebase.initializeApp(app);
 const admin = require('firebase-admin');
-// admin.initializeApp();
 const db = admin.firestore();
 
-router.get('/posts',(req,res) =>{
-    //db.collection('posts')
+router.get('/getPosts', async (req, res) => {
+  var list = [];
+  const postRef = db.collection('posts');
+  const snapshot = await postRef.get();
+  snapshot.forEach(doc => {
+    list.push({
+      userPostName : doc.data().userPostName,
+      userPostId : doc.data().userPostId,
+      text : doc.data().text,
+      imgUrl : doc.data().imgUrl,
+      comments : doc.data().comments
+    })
+  });
+  await res.send(list);
 })
 
 
