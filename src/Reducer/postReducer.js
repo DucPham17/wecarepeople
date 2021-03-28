@@ -5,7 +5,7 @@ export const postReducer = (state = {},action) => {
         case GET_POST_ACTION_REQUEST:
             return {loading : true}
         case GET_POST_ACTION_SUCCESS:
-            return {userInfo : action.payload, loading : false}
+            return {postInfo : action.payload, loading : false}
         case GET_POST_ACTION_FAIL:
             return {error: action.payload, loading: false}
         default:

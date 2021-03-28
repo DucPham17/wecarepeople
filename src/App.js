@@ -1,12 +1,13 @@
 import './App.css';
 import React from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import HomeScreen from './Screen/HomeScreen'
 import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import SigninScreen from './Screen/SigninScreen';
 import SignupScreen from './Screen/SignupScreen';
 import PostScreen from './Screen/PostScreen';
+import InfoScreen from './Screen/InfoScreen';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/signin" exact={true} component={SigninScreen} />
             <Route path="/signup" exact={true} component={SignupScreen} />
             <Route path="/posts" exact={true} component={PostScreen} />
+            <Route path="/info" exact={true} component={InfoScreen} />
           </div>
         </main>
         <footer className="grid-container--footer">
