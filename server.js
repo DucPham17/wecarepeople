@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const dotenv = require("dotenv")
 dotenv.config()
-const config = require("./firebase.js");
+const config = require("./src/Backend/firebase.js");
 const firebase = require("firebase/app");
 const admin = require('firebase-admin');
 //const cors = require('cors');
@@ -17,8 +17,8 @@ admin.initializeApp({
 }); 
 
 
-const userRouter = require('./Router/userRouter')
-const postRouter = require('./Router/postRouter')
+const userRouter = require('./src/Backend/Router/userRouter')
+const postRouter = require('./src/Backend/Router/postRouter')
 
 app.use(bodyParser.json());
 app.use("/api/users",userRouter);
