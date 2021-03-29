@@ -5,6 +5,10 @@ const firebase = require("firebase/app");
 require("firebase/auth");
 const admin = require('firebase-admin');
 const db = admin.firestore();
+const multer = require('multer');
+const upload = multer();
+const storageRef = admin.storage().bucket();
+
 
 router.get('/getPosts', async (req, res) => {
   var list = [];
@@ -20,6 +24,11 @@ router.get('/getPosts', async (req, res) => {
     })
   });
   await res.send(list);
+})
+ 
+router.post('/addPost', upload.single('file'),async(req,res) => {
+  console.log(req.file);
+  res.send("abc");
 })
 
 

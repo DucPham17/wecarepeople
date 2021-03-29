@@ -6,11 +6,14 @@ dotenv.config()
 const config = require("./firebase.js");
 const firebase = require("firebase/app");
 const admin = require('firebase-admin');
+//const cors = require('cors');
 //console.log(config);
-var serviceAccount = require("./key.json");
+//app.use(cors);
 firebase.initializeApp(config);
+//console.log(process.env.key);
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert(JSON.parse(process.env.key)),
+    storageBucket: process.env.storageBucket
 }); 
 
 

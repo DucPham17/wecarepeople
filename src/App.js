@@ -8,6 +8,7 @@ import SigninScreen from './Screen/SigninScreen';
 import SignupScreen from './Screen/SignupScreen';
 import PostScreen from './Screen/PostScreen';
 import InfoScreen from './Screen/InfoScreen';
+import CreatePost from './Screen/CreatePost';
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
             <Route path="/signup" exact={true} component={SignupScreen} />
             <Route path="/posts" exact={true} component={PostScreen} />
             <Route path="/info" exact={true} component={InfoScreen} />
+            <Route path="/createpost" exact={true} component={CreatePost} />
+            
           </div>
         </main>
         <footer className="grid-container--footer">
