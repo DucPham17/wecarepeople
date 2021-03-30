@@ -17,7 +17,7 @@ function PostScreen(props) {
         }
         dispatch(getPost());
         console.log(listPost);
-    }, [])
+    },[])
 
     const handleCreatePost = () => {
         props.history.push("/createpost")
@@ -33,11 +33,15 @@ function PostScreen(props) {
             <div>
                 {loading ? <div>Loading...</div> : error ? <div>There was an error</div> : postInfo ?
                     <div>
-                        {postInfo.map(post => (
-                            <div className="item">
+                        {postInfo.map((post,i) => (
+                            <div className="item" key={i}>
                                 <div>
                                     {post.userPostName}
                                 </div>
+                                <div>
+                                    {(new Date(post.date)).toDateString()}
+                                </div>
+                                <img src={post.imgUrl}/>
                             </div>
                         ))}
                     </div>

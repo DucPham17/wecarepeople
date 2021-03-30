@@ -6,6 +6,7 @@ dotenv.config()
 const config = require("./src/Backend/firebase.js");
 const firebase = require("firebase/app");
 const admin = require('firebase-admin');
+
 //const cors = require('cors');
 //console.log(config);
 //app.use(cors);
@@ -14,7 +15,8 @@ firebase.initializeApp(config);
 admin.initializeApp({
     credential: admin.credential.cert(JSON.parse(process.env.key)),
     storageBucket: process.env.storageBucket
-}); 
+});
+
 
 
 const userRouter = require('./src/Backend/Router/userRouter')

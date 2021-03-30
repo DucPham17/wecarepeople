@@ -23,6 +23,7 @@ function CreatePosts(props) {
         form.append('userId',userInfo.userInfo.uid);
         form.append('name',userInfo.userInfo.displayName);
         dispatch(createPost(form));
+        handleBackToMain();
     }
 
     const handleImageChange = (event) => {

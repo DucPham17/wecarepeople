@@ -9,6 +9,9 @@ export const getPost = () => async (dispatch) => {
         
     try {
         const {data} = await Axios.get("/api/posts/getPosts")
+        data.sort((a,b) => {
+            return a.date - b.date;
+        })
         
         dispatch({
             type: GET_POST_ACTION_SUCCESS,
