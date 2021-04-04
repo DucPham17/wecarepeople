@@ -87,3 +87,29 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* Home Screen*/
+.home-screen {
+  padding: 120px;
+  color: rgb(120, 162, 196);
+  text-align: center;
+  font-size: 250%;
+  font-family: Comic Sans MS;
+}
+
+.home-screen--container {
+  margin: auto;
+  color: rgb(204, 235, 255);
+  background-color: rgb(97, 150, 194);
+  padding: 1rem;
+  border: 0.5rem rgb(92, 142, 184) solid;
+  border-radius: 10rem;
+  width: 70%;
+}
+
+.home-screen--bottom-text {
+  padding:60px;
+  color: #4db6ac;
+  font-family: Apple Chancery, cursive;
+}

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getPost } from '../Action/postAction';
 import NavTabs from '../Component/NavTabs';
 import { Button } from 'react-bootstrap';
+import Post from  '../Model/Post'
 import { postReducer } from '../Reducer/postReducer';
 
 function PostScreen(props) {
@@ -10,7 +11,7 @@ function PostScreen(props) {
     var listPost = useSelector(state => state.posts);
     const { loading, postInfo, error } = listPost;
     const dispatch = useDispatch();
-
+    console.log(userInfo.userInfo);
     useEffect(() => {
         if (!userInfo.userInfo) {
             props.history.push("/signin");
@@ -35,13 +36,8 @@ function PostScreen(props) {
                     <div>
                         {postInfo.map((post,i) => (
                             <div className="item" key={i}>
-                                <div>
-                                    {post.userPostName}
-                                </div>
-                                <div>
-                                    {(new Date(post.date)).toDateString()}
-                                </div>
-                                <img src={post.imgUrl}/>
+                                <Post id={post.postId} userPostName={post.userPostName}
+                                date={post.date} text={post.text} imgUrl={post.imgUrl}></Post>
                             </div>
                         ))}
                     </div>

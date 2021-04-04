@@ -9,6 +9,7 @@ import SignupScreen from './Screen/SignupScreen';
 import PostScreen from './Screen/PostScreen';
 import InfoScreen from './Screen/InfoScreen';
 import CreatePost from './Screen/CreatePost';
+import Comment from './Screen/Comments';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/posts" exact={true} component={PostScreen} />
             <Route path="/info" exact={true} component={InfoScreen} />
             <Route path="/createpost" exact={true} component={CreatePost} />
+            <Route path="/post/:id" exact={true} component={Comment} />
             
           </div>
         </main>

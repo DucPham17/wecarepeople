@@ -4,13 +4,15 @@ import Cookie from "js-cookie";
 import { userReducer } from "./Reducer/userReducer";
 import { postReducer } from "./Reducer/postReducer";
 import { navReducer } from "./Reducer/navReducer";
+import { postCommentReducer } from "./Reducer/postCommentReducer";
 const userInfo = Cookie.getJSON("userInfo") || null;
-const initialState = {signin : {userInfo},posts:[],curNav:0};
+const initialState = {signin : {userInfo},posts:[],curNav:0, postComment:{}};
 
 const reducer = combineReducers({
     signin:userReducer,
     posts:postReducer,
-    curNav : navReducer
+    curNav : navReducer,
+    postComment: postCommentReducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

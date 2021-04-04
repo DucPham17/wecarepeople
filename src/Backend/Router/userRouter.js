@@ -33,11 +33,11 @@ router.post("/signup", (req, res) => {
             user.updateProfile({
                 displayName: name,
             }).then(function () {
-                res.send("abc");
+                res.send(user);
             }).catch(function (error) {
                 // An error happened.
             });
-            res.send(user);
+            
         })
         .catch((error) => {
             res.status(401).send("Existed email");
