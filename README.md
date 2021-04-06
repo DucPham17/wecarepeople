@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# We Care People
+## 1.Idea:
+- Category: Social
+- Mobile: Underprivileged people might not have a mobile; even they might possess a mobile but
+not familiar with using apps. However, somebody witnessing anybody without food on the street
+or anybody who knows that their neighbors or people living on the street or homeless people
+need food can post it in the app based on the location people can help.
+- Story: When somebody posts a need in the app, the users' available option would be shown
+based on the vicinity of his/her area.
+- Market: The young generation can contribute to a great extent. For example, if somebody has
+extra food, she/he wants to share but cannot commute to a place where the food is needed.
+Anyone in the app voluntarily agrees to transport the goods.
+- Scope: Everybody who is involved in this donation circle can influence others to do the same
+and somehow get recognized through the app.
+-User cases:
++ First people will sign in or sign up
++ In the main board, they can see
+* Posts about what available and compost post, and comment in posts
+* Info about user, and sign out
++ When they sign out, they come back to main sign in
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 2. User stories:
+As a generous person, I always want to give away what I don’t need to others people, who need
+eat.
+As a restaurant owener, I have plenty of leftover with good quality and I want to bring them to
+people who need it.
+As a student with limit in finicial, I always hope that I can get help in normal stuff like food,
+clothes, or facilities,..etc 
 
-## Available Scripts
+## 3. Technologies:
+Front-end: React, Redux
+Back-end: Node.js
+Database: FireBase
 
-In the project directory, you can run:
+## 4. Citation:
+a. Firebase documentation https://firebase.google.com/docs <br/>
+b. React documentation https://reactjs.org/docs/getting-started.html <br/>
+c. Material-iu documentation: https://material-ui.com/components/cards/ <br/>
+d. Bootstrap documentation: https://getbootstrap.com/docs/4.1/getting-started/introduction/ <br/>
+e. Medium article from Olalekan Odukoya: https://medium.com/@olamilekan001/image-upload-with-google-cloud-storage-and-node-js-a1cf9baa1876 <br/>
+f. Help from answers from lovelace-augustana college
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
