@@ -15,6 +15,7 @@ function InfoScreen(props) {
         if (!userInfo) {
             props.history.push("/");
         }
+        console.log(userInfo)
     })
     console.log(userInfo);
     const handleSignout = () => {
@@ -24,7 +25,8 @@ function InfoScreen(props) {
     return (
         <div>
             <NavTabs />
-            <Container className="signin-container">
+            {loading ? <div>Loading...</div> : error ? <div>There was an error</div> : userInfo ?
+                <Container className="signin-container">
                 <div className="w-100" style={{ maxWidth: "400px" }}>
                     <Card>
                         <Card.Body>
@@ -35,8 +37,8 @@ function InfoScreen(props) {
 
                     </Card>
                 </div>
-            </Container>
-
+            </Container>:null
+            }
         </div>
     )
 }

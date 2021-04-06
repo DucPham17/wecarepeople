@@ -19,7 +19,7 @@ function PostComments(props) {
     }
    return (
     <Container className="signin-container">
-    <div className="w-100" style={{maxWidth:"400px"}}>
+    <div className="w-300" style={{maxWidth:"400px"}}>
         <Card >
             <Card.Body>
                 <h2 className="text-center mb-4">{props.userPostName}</h2>

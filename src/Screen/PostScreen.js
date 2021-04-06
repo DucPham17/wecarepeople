@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { getPost } from '../Action/postAction';
 import NavTabs from '../Component/NavTabs';
 import { Button } from 'react-bootstrap';
 import Post from  '../Model/Post'
-import { postReducer } from '../Reducer/postReducer';
 
 function PostScreen(props) {
     const userInfo = useSelector(state => state.signin);
